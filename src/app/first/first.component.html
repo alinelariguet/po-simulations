@@ -1,3 +1,21 @@
-<po-page-default p-title="AppName">
-  <p> First </p>
+<po-page-default p-title="PO Button">
+  <div class="po-row po-mb-1">
+    <po-button [p-icon]="iconTemplate1" p-label="PO icon template"></po-button>
+
+    <ng-template #iconTemplate1 >
+      <span style="font-size: inherit;" class="po-icon po-icon-book" aria-hidden="true"></span>
+    </ng-template>
+  </div>
+  <div class="po-row po-mb-1">
+    <po-button p-icon="po-icon-user" p-label="po-icon-user"></po-button>
+  </div>
+  <div class="po-row po-mb-1">
+    <po-button p-icon="fa fa-podcast" p-label="fa fa-podcast"></po-button>
+  </div>
+  <div class="po-row po-mb-1">
+    <po-button [p-icon]="icon" p-label="ACAO 1"></po-button>
+    <ng-template #icon>
+      <span class="material-icons" style="font-size: inherit;">dashboard</span>
+    </ng-template>
+  </div>
 </po-page-default>
