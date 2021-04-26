@@ -1,3 +1,7 @@
-<po-page-default p-title="AppName">
-  <p> Second </p>
+<po-page-default p-title="PO Dynamic Form">
+  <po-dynamic-form
+    [p-fields]="fields"
+    [p-validate]="onChangeFields.bind(this)"
+    [p-value]="person">
+  </po-dynamic-form>
 </po-page-default>
